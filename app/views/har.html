@@ -1,0 +1,113 @@
+<div class="row marketing">
+<h4>Fyll inn din informasjon</h4>
+<form class="form-inline">
+  <div class="form-group">
+
+    <label for="exampleInputEmail1">Brukernavn</label>
+
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Tast inn brukernavn" ng-model="account.userName">
+  </div>
+  </form>
+<form class="form-inline">
+  <div class="form-group">
+
+    <label for="exampleInputEmail2">Passord</label>
+
+    <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Tast inn passord" ng-model="account.password">
+  </div>
+  </form>
+</div>
+
+
+<div class="row marketing">
+  <h4>SQL Plus</h4>
+  <p>
+    Åpne SQLPlus
+  </p>
+  <p>
+    Logg på med følgende info:
+  </p>
+  <div style="background-color: #E0E0E0 ">
+    <p>
+      <b>Angi brukernavn:</b> <em>{{account.userName}}@studbase.uib.no</em>
+    </p>
+    <p>
+      <b>Angi passord:</b> <em>{{account.password}}</em>
+    </p>
+  </div>
+  <p>
+    <em>
+      Passord inntasting i SQL Plus vil være skjult.
+    </em>
+  </p>
+  <p>
+    Det vil komme opp ERROR: ORA-28001: passordet er utløpt. Endrer Passord for {{account.userName}}
+  </p>
+  <div style="background-color: #E0E0E0 ">
+    <form class="form-inline">
+      <div class="form-group">
+
+        <label for="exampleInputEmail1">Nytt passord</label>
+
+        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Tast inn NYTT passord både i SQL Plus og HER" ng-model="account.newPassword">
+      </div>
+      </form>
+      </div>
+
+      <p>  Du vil så bli tilkoblet din database, kryss ut vinduet, eller skriv <em>exit</em> i SQL Plus</p>
+
+        <div class="row marketing">
+          <h4>SQL Developer</h4>
+          <p>
+            Åpne SQL Developer
+          </p>
+          <p>
+            Klikk Avbryt på de tingene som kommer opp.
+          </p>
+          <p>
+            Klikk så på dokument-ikonet med grønt '+'-tegn, skal være rett under navigasjons-baren på venstre side.
+            <span style="color:gray" class="glyphicon glyphicon-file"></span><span style="color:green" class="glyphicon glyphicon-plus"></span>
+          </p>
+
+          <p>
+            Pop-up vindu hvor du skal fylle ut informasjon dukker opp.
+          </p>
+          <p>
+            <b>Fyll kun inn informasjon i de feltene nevnt nedenfor, ikke rør de andre!</b>
+          </p>
+          <div style="background-color: #E0E0E0 ">
+            <p>
+              <b>Connection Name: </b> <em>Hva en du måtte ønske, f.eks MinINFO125base</em>
+            </p>
+            <p>
+              <b>Username: </b> <em>{{account.userName}}</em>
+            </p>
+            <p>
+              <b>Password: </b> <em>{{account.newPassword}}</em>
+            </p>
+            <p>
+              <b>Hostname: </b> <em>bulmeurt-ny.uib.no</em>
+            </p>
+            <p>
+              <b>Port: </b> <em>1666</em>
+            </p>
+            <p>
+              <b>Service Name: </b> <em>studbase.uib.no</em>
+            </p>
+          </div>
+          <p>
+            <b>TEST: </b><em>Vil da komme opp en status-label nede i venstre side med teksten Success</em>
+          </p>
+          <p>
+            <b>SAVE</b>
+          </p>
+          <p>
+            Det vil så komme opp en pop-up box hvor du må skrive inn passord på nytt.
+          </p>
+          <p>
+            Hvis dette er gjort korrekt vil du bli møtt med en "terminal" på høyre side i SQL Developer, hvor man kan skrive inn statements, spørringer,osv.
+          </p>
+          <p>
+            Ved senere anledninger vil det bare være å starte opp SQL Developer,så vil du ha muligheten til å koble til din "Connection".
+          </p>
+        </div>

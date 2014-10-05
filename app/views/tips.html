@@ -1,0 +1,33 @@
+<div class="row marketing">
+<h4> Generelle tips </h4>
+<p>Start med en relasjon uten fremmednøkler.</p>
+<p>Sørg for at datatypen til FKen er lik som den attributten den "linker" til.</p>
+</div>
+
+<div class="row marketing">
+<h4> Create Table </h4>
+<p>CREATE TABLE X (
+y CHAR(4),
+z VARCHAR2(30),
+PRIMARY KEY(y),
+FOREIGN KEY(z) REFERENCES
+Æ (ø)
+);</p>
+</div>
+
+<div class="row marketing">
+<h4> Insert Into </h4>
+<p>INSERT INTO X VALUES('0000', 'Tekst');</p>
+<p>I dette eksempelet er det selvsagt nødvendig at 'Tekst' er en verdi for attributtet ø i Table Æ,
+hvis ikke vil man få referanseintegritetsfeil, da FKen z ikke refererer til noe som finnes i Table Æ. </p>
+</div>
+
+<div class="row marketing">
+<h4> Spørringer </h4>
+<p>SELECT kolonn(er) FROM tabell(er)</p>
+<p>SELECT z FROM X;</p>
+<p>SELECT z, y FROM X;</p>
+<p>SELECT * FROM X;</p>
+<p>SELECT z FROM X WHERE y='0000';</p>
+
+</div>

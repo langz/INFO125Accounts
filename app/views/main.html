@@ -1,0 +1,17 @@
+<div class="jumbotron">
+  <h1>INFO125</h1>
+  <p class="lead">
+    <img src="images/uib.png" alt="UIB"><br>
+    Få din SQL Developer bruker
+  </p>
+  <p>
+<a ng-href="#/har" class="btn btn-lg btn-warning">Har Bruker <span class="glyphicon glyphicon-question-sign"></span></a>
+<a ng-hide="getClicked()"class="btn btn-lg btn-success" ng-click="getAccount()">Få Bruker <span class="glyphicon glyphicon-ok-sign"></span></a>
+<a ng-href="#/tips" class="btn btn-lg btn-info">Tips til Oblig 2 <span class="glyphicon glyphicon-info-sign btn-info"></span></a>
+</p>
+<p><em>Klikk 'Få Bruker' kun <b>EN</b> gang!</em></p>
+<small>{{getAccounts()}}/100 er registrert</small>
+</div>
+
+
+<a class="btn btn-lg btn-success" ng-click="addAccounts()">ADD <span class="glyphicon glyphicon-info-sign"></span></a>
