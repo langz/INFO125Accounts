@@ -1,0 +1,1 @@
+This project is a web-application, so the students in INFO125 easily can create an account for Oracle SQL Developer with a guide which describes the steps. It also provides some tips for the new mandatory assignment
